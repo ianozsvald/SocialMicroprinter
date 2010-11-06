@@ -1,3 +1,17 @@
+The Social Microrinter is an Arudio+WiShield+CBM 231 combination, it reads tweets and other info from a website and prints them to the CBM 231 when a button is pressed. Full write-up:
+XXXX
+
+FOR THE ARDUINO:
+This sketch assumes you have a WiShield 1.0 with 1.3 drivers, when the button is pressed it'll talk to microprinter.ianozsvald.com to get the latest printable info.
+Microprinter_SimpleClientWiShield13.pde	
+
+FOR THE SERVER:
+
+twitterprinter.py gets tweets and prepares an output file called index.html. This is read by the Arduino sketch, it includes the control characters for bold and underline.
+
+microprinter.py is taken from BenOSteen's excellent: https://github.com/benosteen/microprinter
+
+I use the following line to run a cron job every 2 minutes, it runs twitterprinter.py and outputs index.html
 crontab:
 */2 * * * * /usr/local/bin/python2.5 /home/ianozsvald/webapps/app_microprinter/twitterprinter.py
 runs the script every two mins
