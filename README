@@ -1,0 +1,3 @@
+crontab:
+*/2 * * * * /usr/local/bin/python2.5 /home/ianozsvald/webapps/app_microprinter/twitterprinter.py
+runs the script every two mins
