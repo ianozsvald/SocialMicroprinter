@@ -1,5 +1,5 @@
 The Social Microrinter is an Arudio+WiShield+CBM 231 combination, it reads tweets and other info from a website and prints them to the CBM 231 when a button is pressed. Full write-up:
-XXXX
+http://ianozsvald.com/2010/11/06/building-a-social-microprinter/
 
 FOR THE ARDUINO:
 This sketch assumes you have a WiShield 1.0 with 1.3 drivers, when the button is pressed it'll talk to microprinter.ianozsvald.com to get the latest printable info.
